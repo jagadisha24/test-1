@@ -53,10 +53,11 @@ pipeline {
                 }
             }
         }
-        stage('Pushing Image to Repository') {
-            steps {
-                sh 'docker push jagadishasiddaiah/puneethrajkumar:1'
-            }
-        }
+        stage('Pushing image to repository') {
+    steps {
+        sh 'docker push jagadishasiddaiah/puneethrajkumar:1'
+    }
+}
+
     }
 }
